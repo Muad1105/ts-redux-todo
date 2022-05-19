@@ -8,7 +8,7 @@ const initialState: TodoReducer = {
     todoList: [
         {
             action: 'read',
-            todo: 'Read new story',
+            todo: 'Readdddd',
         },
     ],
 };

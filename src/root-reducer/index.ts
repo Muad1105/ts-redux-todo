@@ -5,6 +5,7 @@ import todoReducer from '../components/main-container/reducer/reducer';
 const rootReducer: Reducer = combineReducers({
     actionBtn: ActionBtnReducer,
     todo: todoReducer,
+    jhvjh,
 });
 
 export default rootReducer;
