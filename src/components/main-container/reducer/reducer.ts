@@ -5,12 +5,7 @@ import { TodoReducer } from './model';
 import { CreatingListOfusers } from './events';
 
 const initialState: TodoReducer = {
-    todoList: [
-        {
-            action: 'read',
-            todo: 'Readdddd',
-        },
-    ],
+    todoList: [],
 };
 
 export default (
@@ -18,6 +13,11 @@ export default (
     action: Action
 ): TodoReducer => {
     switch (action.type) {
+        case CreatingListOfusers.USERS_LIST:
+            return {
+                ...state,
+                todoList: [...state.todoList, action.payload],
+            };
         default:
             return state;
     }

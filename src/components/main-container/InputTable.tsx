@@ -7,11 +7,12 @@ function InputTable() {
     const dispatch = useDispatch();
 
     const updateUserList = () => {
+        console.log(name);
         dispatch(createUserList(name));
     };
 
     return (
-        <div>
+        <div className="input-table">
             <form>
                 <label htmlFor="userName">
                     User Name
@@ -22,7 +23,8 @@ function InputTable() {
                         }}
                     />
                 </label>
-                <button onClick={() => updateUserList}>Add User</button>
+
+                <button onClick={updateUserList}>Add Todo</button>
             </form>
         </div>
     );
